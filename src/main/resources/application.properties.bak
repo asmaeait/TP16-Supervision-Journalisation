@@ -1,0 +1,63 @@
+# ==========================================
+# CONFIGURATION GÉNÉRALE
+# ==========================================
+spring.application.name=app-monitoring
+server.port=8081
+
+# ==========================================
+# SPRING BOOT ACTUATOR
+# ==========================================
+# Expose tous les endpoints (health, info, metrics, prometheus...)
+management.endpoints.web.exposure.include=*
+
+# Affiche les détails complets du health check
+management.endpoint.health.show-details=always
+
+# Active les métriques et l'endpoint Prometheus
+management.endpoint.metrics.enabled=true
+management.endpoint.prometheus.enabled=true
+
+# Base path des endpoints Actuator
+management.endpoints.web.base-path=/actuator
+
+# Active les infos d'environnement dans /actuator/info
+management.info.env.enabled=true
+
+# ==========================================
+# INFORMATIONS APP (/actuator/info)
+# ==========================================
+info.app.name=App Monitoring Meteo
+info.app.version=1.0.0
+info.app.description=TP16 - Supervision et Logging avec Spring Boot
+info.app.auteur=ENS Etudiant
+info.app.technos=Spring Boot, Prometheus, Grafana
+
+# ==========================================
+# PROMETHEUS (export des métriques)
+# ==========================================
+management.prometheus.metrics.export.enabled=true
+
+# Nom de l'application dans les labels Prometheus
+management.metrics.tags.application=${spring.application.name}
+
+# ==========================================
+# LOGGING
+# ==========================================
+# Niveau global des logs
+logging.level.root=INFO
+
+# Niveau DEBUG pour notre package (plus verbeux)
+logging.level.ma.ens.app_monitoring=DEBUG
+
+# Fichier de log (créé automatiquement dans ./logs/)
+logging.file.name=logs/app-monitoring.log
+
+# Format dans la console : heure [thread] niveau logger - message
+logging.pattern.console=%d{HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{30}) - %msg%n
+
+# Format dans le fichier de log
+logging.pattern.file=%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+
+# Taille max du fichier log avant rotation
+logging.logback.rollingpolicy.max-file-size=10MB
+logging.logback.rollingpolicy.max-history=7

@@ -1,0 +1,52 @@
+2026-03-30 14:55:44.159 [main] INFO  m.e.a.AppMonitoringApplication - Starting AppMonitoringApplication using Java 25.0.1 with PID 18928 (C:\Users\T480s\Downloads\app-monitoring\target\classes started by T480s in C:\Users\T480s\Downloads\app-monitoring)
+2026-03-30 14:55:44.163 [main] INFO  m.e.a.AppMonitoringApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-30 14:55:46.383 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-30 14:55:46.411 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-30 14:55:46.415 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-03-30 14:55:46.538 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-30 14:55:46.539 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2293 ms
+2026-03-30 14:55:48.147 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2026-03-30 14:55:48.274 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-30 14:55:48.313 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-30 14:55:48.350 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-30 14:56:28.566 [main] INFO  m.e.a.AppMonitoringApplication - Starting AppMonitoringApplication using Java 25.0.1 with PID 2308 (C:\Users\T480s\Downloads\app-monitoring\target\classes started by T480s in C:\Users\T480s\Downloads\app-monitoring)
+2026-03-30 14:56:28.569 [main] INFO  m.e.a.AppMonitoringApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-30 14:56:31.500 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-30 14:56:31.553 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-30 14:56:31.553 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-03-30 14:56:31.754 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-30 14:56:31.756 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3115 ms
+2026-03-30 14:56:33.716 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2026-03-30 14:56:33.899 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-30 14:56:33.976 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-30 14:56:34.021 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+

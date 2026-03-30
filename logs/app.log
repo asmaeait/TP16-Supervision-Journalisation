@@ -1,0 +1,56 @@
+2026-03-30 15:32:25.753 [main] INFO  m.e.a.AppMonitoringApplicationTests - Starting AppMonitoringApplicationTests using Java 25.0.1 with PID 12048 (started by T480s in C:\Users\T480s\Downloads\app-monitoring)
+2026-03-30 15:32:25.756 [main] INFO  m.e.a.AppMonitoringApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-03-30 15:32:29.505 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2026-03-30 15:32:29.633 [main] INFO  m.e.a.AppMonitoringApplicationTests - Started AppMonitoringApplicationTests in 4.605 seconds (process running for 6.106)
+2026-03-30 15:32:55.708 [main] INFO  m.e.a.AppMonitoringApplication - Starting AppMonitoringApplication using Java 25.0.1 with PID 19156 (C:\Users\T480s\Downloads\app-monitoring\target\classes started by T480s in C:\Users\T480s\Downloads\app-monitoring)
+2026-03-30 15:32:55.710 [main] INFO  m.e.a.AppMonitoringApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-30 15:32:57.041 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-30 15:32:57.056 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-30 15:32:57.057 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-03-30 15:32:57.113 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-30 15:32:57.113 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1325 ms
+2026-03-30 15:32:57.796 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2026-03-30 15:32:57.850 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-30 15:32:57.868 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-30 15:32:57.884 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-30 15:47:48.083 [main] INFO  m.e.a.AppMonitoringApplication - Starting AppMonitoringApplication using Java 25.0.1 with PID 2460 (C:\Users\T480s\Downloads\app-monitoring\target\classes started by T480s in C:\Users\T480s\Downloads\app-monitoring)
+2026-03-30 15:47:48.086 [main] INFO  m.e.a.AppMonitoringApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-30 15:47:49.598 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-30 15:47:49.613 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-30 15:47:49.613 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-03-30 15:47:49.675 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-30 15:47:49.675 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1511 ms
+2026-03-30 15:47:50.322 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/actuator'
+2026-03-30 15:47:50.388 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-30 15:47:50.411 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-30 15:47:50.429 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

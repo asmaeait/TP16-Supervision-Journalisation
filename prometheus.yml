@@ -1,0 +1,23 @@
+# Configuration Prometheus pour scraper l'application Spring Boot
+
+global:
+  # Intervalle de scraping (toutes les 5 secondes)
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: 'app-monitoring-meteo'
+    # Chemin de l'endpoint Prometheus de Spring Boot Actuator
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      # host.docker.internal : permet à Prometheus (dans Docker) d'atteindre
+      # l'app Spring Boot tournant sur ta machine
+      - targets: ['host.docker.internal:8080']
+    # Labels ajoutés à toutes les métriques de cette source
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'spring-boot-local'
+
+        rule_files:
+          - "alerts.yml"

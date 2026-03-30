@@ -1,0 +1,25 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< ma.ens:app-monitoring >------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ app-monitoring ---
+[INFO] Deleting C:\Users\T480s\Downloads\app-monitoring\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ app-monitoring ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.968 s
+[INFO] Finished at: 2026-03-30T15:12:51+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources (default-resources) on project app-monitoring: filtering C:\Users\T480s\Downloads\app-monitoring\src\main\resources\application.properties to C:\Users\T480s\Downloads\app-monitoring\target\classes\application.properties failed with MalformedInputException: Input length = 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
